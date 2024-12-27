@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://github.com/zasasamar2129/zpotify1">
         <kbd>
-            <img width="250" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="FZ Bypass Logo">
+            <img width="250" src="https://files.catbox.moe/ppbwe6.jpg" alt="ZPOTIFY Logo">
         </kbd>
     </a>
     

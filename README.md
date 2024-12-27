@@ -1,5 +1,9 @@
-![Spotify Logo](https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg)
-
+<div align="center">
+    <a href="https://github.com/zasasamar2129/zpotify1">
+        <kbd>
+            <img width="250" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="FZ Bypass Logo">
+        </kbd>
+    </a>
 # Spotify Downloader Bot
 
 [DEMO VERSION @z_downloadbot](https://t.me/z_downloadbot)

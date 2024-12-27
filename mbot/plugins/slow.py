@@ -64,14 +64,14 @@ genius = Genius("api_key")
 #     await foo(c, m, cb=True)
 
 ##  & filters.private add this to respond only in private Chat
-@Mbot.on_message(filters.incoming & filters.text, group=-2)
+@Mbot.on_message(filters.incoming & filters.text, group=-3)
 async def _(c, m):
     message = m
     Mbot = c
     try:
         user_id = message.from_user.id
     except:
-        user_id = 5268375124
+        user_id = 5337964165
     if not m.text:
         return
     try:
@@ -150,7 +150,7 @@ async def search(Mbot: Mbot, query: CallbackQuery):
                 audio["TITLE"] = f" {song.get('name')}"
                 audio["ORIGINALYEAR"] = song.get('year')
                 audio["YEAR_OF_RELEASE"] = song.get('year')
-                audio["WEBSITE"] = "https://t.me/spotify_downloa_bot"
+                audio["WEBSITE"] = "https://t.me/z_downloadbot"
                 audio["GEEK_SCORE"] = "9"
                 audio["ARTIST"] = song.get('artist')
                 audio["ALBUM"] = song.get('album')
@@ -223,7 +223,7 @@ async def search(Mbot: Mbot, query: CallbackQuery):
         try:
             await query.message.reply_text(f"Done✅",   
          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Feedback", callback_data="feed")]]))
-            await query.message.reply_text(f"Check out @spotify_downloa_bot(music)  @spotifynewss(News)")
+            await query.message.reply_text(f"Check out @z_downloadbot(music)  @Zpotify1(News)")
         except:
             pass     
 

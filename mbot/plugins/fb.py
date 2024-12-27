@@ -14,19 +14,19 @@ async def link_handler(Mbot, message):
        if get_api['success'] == "ok":
           if get_api.get('result').get('hd'):
              try:
-                 dump_file = await message.reply_video(get_api['result']['hd'],caption="Thank you for using - @InstaReelsdownbot")
+                 dump_file = await message.reply_video(get_api['result']['hd'],caption="Thank you for using - @z_downloadbot")
              except KeyError:
                  pass 
              except Exception:
                  try:
                      sndmsg = await message.reply(get_api['result']['hd'])
                      await asyncio.sleep(1)
-                     dump_file = await message.reply_video(get_api['result']['hd'],caption="Thank you for using - @InstaReelsdownbot")
+                     dump_file = await message.reply_video(get_api['result']['hd'],caption="Thank you for using - @z_downloadbot")
                      await sndmsg.delete()
                  except Exception:
                      try:
                         down_file = wget.download(get_api['result']['hd'])
-                        await message.reply_video(down_file,caption="Thank you for using - @InstaReelsdownbot")
+                        await message.reply_video(down_file,caption="Thank you for using - @z_downloadbot")
                         await sndmsg.delete()
                         os.remove(down_file)
                      except:
@@ -34,19 +34,19 @@ async def link_handler(Mbot, message):
           else: 
              if get_api.get('result').get('sd'):
                try:
-                   dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @InstaReelsdownbot")
+                   dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @z_downloadbot")
                except KeyError:
                    pass
                except Exception:
                    try:
                        sndmsg = await message.reply(get_api['result']['sd'])
                        await asyncio.sleep(1)
-                       dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @InstaReelsdownbot")
+                       dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @z_downloadbot")
                        await sndmsg.delete()
                    except Exception:
                       try:
                         down_file = wget.download(get_api['result']['sd'])
-                        await message.reply_video(down_file,caption="Thank you for using - @InstaReelsdownbot")
+                        await message.reply_video(down_file,caption="Thank you for using - @z_downloadbot")
                         await sndmsg.delete()
                         os.remove(down_file)
                       except:

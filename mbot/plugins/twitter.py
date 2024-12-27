@@ -13,13 +13,13 @@ async def twitter_handler(Mbot, message):
          link = link.replace("twitter.com","fxtwitter.com")
       m=await message.reply_sticker("CAACAgIAAxkBATWhF2Qz1Y-FKIKqlw88oYgN8N82FtC8AAJnAAPb234AAT3fFO9hR5GfHgQ")
       try:
-          dump_file = await message.reply_video(link,caption="Thank you for using - @InstaReelsdownbot")
+          dump_file = await message.reply_video(link,caption="Thank you for using - @z_downloadbot")
       except Exception as e:
           print(e)
           try:
              snd_message=await message.reply(link)
              await asyncio.sleep(1)
-             dump_file = await message.reply_video(link,caption="Thank you for using - @InstaReelsdownbot")
+             dump_file = await message.reply_video(link,caption="Thank you for using - @z_downloadbot")
              await snd_message.delete()
           except Exception as e:
               print(e)
@@ -31,13 +31,13 @@ async def twitter_handler(Mbot, message):
                   meta_tag = soup.find("meta", attrs={"property": "og:image"})
               content_value  = meta_tag['content']
               try:
-                  dump_file = await message.reply_video(content_value,caption="Thank you for using - @InstaReelsdownbot")
+                  dump_file = await message.reply_video(content_value,caption="Thank you for using - @z_downloadbot")
               except Exception as e:
                   print(e)
                   try:
                      snd_msg=await message.reply(content_value)
                      await asyncio.sleep(1)
-                     await message.reply_video(content_value,caption="Thank you for using - @InstaReelsdownbot")
+                     await message.reply_video(content_value,caption="Thank you for using - @z_downloadbot")
                      await snd_msg.delete()
                   except Exception as e:
                       print(e)
@@ -52,6 +52,6 @@ async def twitter_handler(Mbot, message):
           if "dump_file" in locals():
              await dump_file.copy(DUMP_GROUP)
        await m.delete()
-       await message.reply("Check out @spotify_downloa_bot(music)  @spotifynewss(Channel) \n Please Support Us By /donate To Maintain This Project")               
+       await message.reply("Check out @z_downloadbot(music)  @Zpotify1(Channel) \n Please Support Us By /donate To Maintain This Project")               
                   
       

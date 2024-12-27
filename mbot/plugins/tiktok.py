@@ -18,14 +18,14 @@ async def link_handler(Mbot, message):
                      await message.reply_photo(get_api['cover'])
                  except:
                      pass 
-              dump_file = await message.reply_video(get_api['links'][0]['a'], caption="Thank you for using - @InstaReelsdownbot")
+              dump_file = await message.reply_video(get_api['links'][0]['a'], caption="Thank you for using - @z_downloadbot")
            except KeyError:
                return await message.reply("Invalid TikTok video url. Please try again.")
            except Exception:
                snd_msg=await message.reply(get_api['links'][0]['a'])
                await asyncio.sleep(1)
                try:
-                  dump_file = await message.reply_video(get_api['links'][0]['a'],caption="Thank you for using - @InstaReelsdownbot")
+                  dump_file = await message.reply_video(get_api['links'][0]['a'],caption="Thank you for using - @z_downloadbot")
                   await snd_msg.delete()
                except Exception:
                    pass
@@ -38,4 +38,4 @@ async def link_handler(Mbot, message):
             if DUMP_GROUP:
                await dump_file.copy(DUMP_GROUP)
             await m.delete()
-        await message.reply("Check out @spotify_downloa_bot(music)  @spotifynewss(Channel) \n Please Support Us By /donate To Maintain This Project")
+        await message.reply("Check out @z_downloadbot(music)  @Zpotify1(Channel) \n Please Support Us By /donate To Maintain This Project")

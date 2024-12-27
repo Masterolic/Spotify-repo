@@ -27,7 +27,7 @@ async def sng(bot, message):
           except Exception as e:                            
              await message.reply_text(f"lyrics does not found for `{song} {e}`") #", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"https://t.me/Spotify newss")]]))
           finally:
-            await message.reply("Check out @spotify_downloa_bot(music)  @spotifynewss(News)")
+            await message.reply("Check out @z_downloadbot(music)  @Zpotify1(News)")
 
 
 

@@ -1,5 +1,4 @@
-![Spotify Logo](https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg){: .center}
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" style="display:block;margin-left:auto;margin-right:auto">
 # Spotify Downloader Bot
 
 [DEMO VERSION @z_downloadbot](https://t.me/z_downloadbot)

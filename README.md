@@ -4,6 +4,7 @@
             <img width="250" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="FZ Bypass Logo">
         </kbd>
     </a>
+</div>
 
 # Zpotify Downloader Bot
 
